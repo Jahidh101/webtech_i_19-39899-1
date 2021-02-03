@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>
+      Blood Donation Form
+    </title>
+    <style>
+      label{display:block;}
+      label span{display:inline-block; width:360px;text-align:right;}
+      label input{width:400px;}
+      h2{color:red;}
+      h6{display:inline-block; width:100px;}
+      h5{color:red; display:inline;}
+    </style>
+  </head>
+  
+  <body style = "background-color:lightgrey;">
+  <span style="color:red;">*</span> - Denotes Required Information  <br>
+    <b>>1 Donation </b>  >2 Confirmation >Thank You! 
+
+    
+    <h2>Donor Information</h2>
+    <form>
+      <label><span><b>First Name</b><h5>*</h5></span>
+      <input type="text" name="firstname" required></label>
+
+      <label><span><b>Last Name</b><h5>*</h5></span>
+      <input type="text" name="lastname" required></label>
+
+      <label><span><b>Company</b></span>
+      <input type="text" name="company"></label>
+
+      <label><span><b>Adress 1</b><h5>*</h5></span>
+      <input type="text" name="adress1" required></label>
+
+      <label><span><b>Adress 2</b></span>
+      <input type="text" name="adress2"></label>
+
+      <label><span><b>City</b><h5>*</h5></span>
+      <input type="text" name="city" required></label>
+
+      <label><span><b>State</b><h5>*</h5></span>
+      <select><option value="State" required>Select a State</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Barishal">Barishal</option> 
+        <option value="Chittagong">Chittagong</option>
+      </select></label>
+
+      <label><span><b>Zip Code</b><h5>*</h5></span>
+      <input type="text" name="zipcode" required></label>
+
+      <label><span><b>Country</b><h5>*</h5></span>
+      <select><option value="Country" required>Select a Country</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Brail">Brail</option>
+        <option value="Russia">Russia</option>
+      </select></label>
+
+      <label><span><b>Phone</b></span>
+      <input type="text" name="phone"></label>
+
+      <label><span><b>Fax</b></span>
+      <input type="text" name="fax"></label>
+
+      <label><span><b>Email</b><h5>*</h5></span>
+      <input type="text" name="email" required></label>
+
+      <span style = "display:inline-block; width:360px;text-align:right;"><b>Donation Amount</b><h5>*</h5></span>
+      <p style="display:inline-block;width:=80px;"><input type="radio" name="donation" value="None">None</p>
+      <p style="display:inline-block; width:=80px;;"><input type="radio" name="donation" value="50$">50$</p>
+      <p style="display:inline-block; width:=80px; "><input type="radio" name="donation" value="75$">75$</p>
+      <p style="display:inline-block; width:=80px;"><input type="radio" name="donation" value="100$">100$</p>
+      <p style="display:inline-block; width:=80px;"><input type="radio" name="donation" value="250$">250$</p>
+      <p style="display:inline-block; width:=80px;"><input type="radio" name="donation" value="Other">Other</p>
+      <label><span style=" width: 450px"><h6>(Check a button or type in  your ammount)</h6><b>Other Amount</b></span>
+      <input type="text" name="otheramount"></label>
+
+      <span style = "display:inline-block; width:360px;text-align:right;"><b>Recurring Doantion</b><h5>*</h5></span>
+      <p style="display:inline-block; width:=70px;"><input type="checkbox" name="donation" value="Other">I am interested in giving on a regular basis.</p>
+
+      <p><span style = "display:inline-block; width:500px;text-align:right;">Monthly Credit Card $</span>
+      <input type style="width:80px"="text" name="donationMoney"/>
+      <span>For</span>
+      <input type style="width:80px"="text" name="months"/>
+      Months</p>
+
+      <h2>Honorarium and Memorial Donation Information</h2>
+      <div>
+      <span style = "display:inline-block; width:360px;text-align:right;"><b>I would like to make this donation</b></span>
+      <p style="display:inline-block;"><input type="radio" name="thisDonation" value="honor">To Honor</p>
+      <p style="display:block;width: 480px; text-align: right; ;"><input type="radio" name="thisDonation" value="memory">In Memory Of</p>
+     </div>
+
+      <label><span><b>Name</b></span>
+      <input type="text" name="name"/></label>
+
+      <label><span><b>Acknowledge Donation to</b></span>
+      <input type="text" name="donation"/></label>
+
+      <label><span><b>Address</b></span>
+      <input type="text" name="adress"/></label>
+
+      <label><span><b>City</b></span>
+      <input type="text" name="city"/></label>
+
+      <label><span><b>State</b></span>
+      <select><option value="State">Select a State</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Barishal">Barishal</option> 
+        <option value="Chittagong">Chittagong</option>
+      </select>
+    </label>
+
+      <label><span><b>Zip</b></span>
+      <input type="text" name="zip"/></label>
+
+      <h2>Additional Information</h2>
+
+      Please enter your name, company or organization as you would like it to appear in our publications:
+
+      <label><span><b>Name</b></span>
+      <input type="text" name="name"/></label>
+
+
+      <div>
+      <p><input type="checkbox" name="donation" value="Other">I would like my gift to remain anonymus.</p>
+      <p><input type="checkbox" name="donation" value="Other">My employer offers a matching gift program. I will mail the matching gift form.</p>
+      <p><input type="checkbox" name="donation" value="Other">Please save the cost of acknowledging this gift by not mailing a thank you letter.</p>
+      </div>
+
+      <div ><b>Comments: </b><br><h6>(please type any questions or feedback here)</h6>
+      <textarea rows="6" cols="80" name="comment" form="usrform"></textarea></div>
+
+      <span style = "display:inline-block; width:360px;text-align:right;"><b><b>How may we contact you?</b></b></span>
+      <p style="display:inline-block;width: 60px; text-align: right;"><input type="checkbox" name="email" value="email">Email</p>
+      <p style="display:block;width: 448px; text-align: right;"><input type="checkbox" name="postmail" value="post">Post Mail</p>
+      <p style="display:block;width: 451px; text-align: right;"><input type="checkbox" name="telephone" value="telephone">Telephone</p>
+      <p style="display:block;width: 409px; text-align: right;"><input type="checkbox" name="fax" value="fax">Fax</p><br>
+
+      <span>I would like to receive newsletter and information about special events by:</span>
+      <p style="display:block;width: 430px; text-align: right;"><input type="checkbox" name="email" value="email">E-mail</p>
+      <p style="display:block;width: 448px; text-align: right;"><input type="checkbox" name="postmail" value="post">Post Mail</p><br>
+      <p style="display:inline-block; width:=70px;"><input type="checkbox" name="volunteering" value="volunteering">
+
+      I would like information about volunteering with the. <br>
+      <input type="textbox" name="volunteering" style="width: 800px"></p> <br>
+
+      <span style = "display:inline-block; width:360px;text-align:right;"><button class style="border-radius:12px;">Reset</button>
+      <button class style="border-radius:12px;">Continue</button></span> <br>
+      Donate online with confidence. You are on a secure server.<br>
+      If you have any problems or questiona, please contact support.
+  </form>
+  </body>
+ </html>
